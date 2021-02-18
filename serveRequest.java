@@ -2,7 +2,7 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
-public class serveRequest implemenets Runnable {
+public class serveRequest implements Runnable {
     Socket socket;
 
     public serveRequest(Socket socket) throws Exception {
