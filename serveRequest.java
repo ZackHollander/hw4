@@ -33,6 +33,7 @@ public class serveRequest implements Runnable {
             os.writeBytes(outputMsg);
             os.writeBytes("\r\n");
             System.out.println("Sent to client: ");
+            System.out.println(outputMsg);
         }
     }
 }
