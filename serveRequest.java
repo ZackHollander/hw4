@@ -1,6 +1,5 @@
 import java.io.*;
 import java.net.*;
-import java.util.*;
 
 public class serveRequest implements Runnable {
     Socket socket;
@@ -28,7 +27,7 @@ public class serveRequest implements Runnable {
             String msg = br.readLine();
             System.out.println("Received from client: ");
             System.out.println(msg);
-
+            
             String outputMsg = msg.toUpperCase();
             os.writeBytes(outputMsg);
             os.writeBytes("\r\n");
